@@ -1,0 +1,21 @@
+{
+    "name": "magenio/magento2-gulp",
+    "description": "New Magento2 gulpfile",
+    "version": "2.0.7",
+    "license": "MIT",
+    "type": "magento2-component",
+    "extra": {
+        "map": [
+            [ "gulpfile.js", "gulpfile.js"],
+            ["package.gulp.json.sample", "package.gulp.json.sample"],
+            ["dev/tools/gulp", "dev/tools/gulp"]
+        ]
+    },
+    "authors": [
+        {
+            "name": "Antonio carboni",
+            "email": "a.carboni@magenio.com",
+            "homepage": "https://www.magenio.com"
+        }
+    ]
+}
