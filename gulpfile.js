@@ -87,8 +87,8 @@ gulp.cdebug('==============================================================');
     Variables & Default Configs
 ========================================================================== */
 
-var sourceMaps = gulpConfigs.sourcemap;
-var minicss = gulpConfigs.minicss;
+var sourceMaps = lessConfigs.sourcemap;
+var minicss = lessConfigs.minicss;
 var liveReload = gulpConfigs.liveReload;
 var browsersyncOn = gulpConfigs.browsersync;
 
