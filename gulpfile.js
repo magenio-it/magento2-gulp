@@ -87,7 +87,7 @@ gulp.cdebug('==============================================================');
     Variables & Default Configs
 ========================================================================== */
 
-var sourceMaps = lessConfigs.sourcemap;
+var sourceMap = lessConfigs.sourcemap;
 var minicss = lessConfigs.minicss;
 var liveReload = gulpConfigs.liveReload;
 var browsersyncOn = gulpConfigs.browsersync;
@@ -246,7 +246,7 @@ gulp.task('less', function() {
 
     gulp.src(lessFiles)
         // Source map
-        .pipe(gulpif(sourceMaps, sourcemaps.init({largeFile: true})))
+        .pipe(gulpif(sourceMap, sourcemaps.init({largeFile: true})))
         // Less compilation
         .pipe(less().on('error', function(err) {
             console.log(err.error);
@@ -254,7 +254,7 @@ gulp.task('less', function() {
         // Minify css
         .pipe(gulpif(minicss, cssmin()))
         // Insert Source Maps
-        .pipe(gulpif(sourceMaps, sourcemaps.write()))
+        .pipe(gulpif(sourceMap, sourcemaps.write()))
         // Set Destionation
         .pipe(gulp.dest( path + 'css/'))
         // Set Browsersync stream for injection css

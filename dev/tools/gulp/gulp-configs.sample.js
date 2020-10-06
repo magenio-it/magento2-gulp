@@ -9,7 +9,7 @@ module.exports = {
     },
     less: {
         singletheme: 'luma',
-        sourcemaps: true,
+        sourcemap: true,
         minicss: false,
     },
     watch: {
