@@ -249,7 +249,7 @@ gulp.task('less', function() {
         .pipe(gulpif(sourceMap, sourcemaps.init({largeFile: true})))
         // Less compilation
         .pipe(less().on('error', function(err) {
-            console.log(err.error);
+            console.log(err.message);
         }))
         // Minify css
         .pipe(gulpif(minicss, cssmin()))
